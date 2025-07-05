@@ -1,0 +1,110 @@
+/* Base layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffe3ec, #f5e0ff);
+    color: #2c003e;
+}
+
+/* Container and card styling */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(208, 0, 128, 0.2);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #a100a1;
+}
+
+/* Form fields */
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px;
+    border: 2px solid #f3b3ff;
+    border-radius: 10px;
+    background-color: #fff0f8;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #e754c2;
+    outline: none;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    background: linear-gradient(90deg, #ff4dcf, #a74cf2);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #f73fb5, #8839da);
+}
+
+/* Navigation links or action links */
+a {
+    color: #bf00ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Card style for note blocks / passwords */
+.note-card {
+    background: #fff0fb;
+    border: 2px solid #f0a6ff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(193, 64, 168, 0.1);
+}
+
+/* Flash messages */
+.flash {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.flash.danger {
+    background-color: #e60073;
+}
+
+.flash.success {
+    background-color: #6a0dad;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 1rem;
+    }
+
+    input, button {
+        font-size: 0.95rem;
+    }
+}

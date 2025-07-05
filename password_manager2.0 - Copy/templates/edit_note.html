@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>📝 Editing: {{ title }}</h2>
+        <form method="POST">
+            <textarea name="content" rows="10" required>{{ content }}</textarea>
+            <button type="submit">Update</button>
+            <a href="{{ url_for('dashboard') }}" class="btn">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
